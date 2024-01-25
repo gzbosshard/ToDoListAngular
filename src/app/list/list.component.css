@@ -1,0 +1,103 @@
+
+.principal{
+  background-color: #F2F2F2;
+  margin-top: 10%;
+  padding: 3%;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  width: 300px;
+}
+
+.input{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 170px;
+}
+
+input:focus{
+  outline: none;
+  background-color: #e5edf5;
+}
+
+input{
+  background-color: #F2F2F2;
+  border: 5px solid #54718E;
+  padding: 10px 20%;
+
+}
+
+#buttonMais{
+  border: 5px solid #54718E;
+  background-color: #54718E;
+  color: #F2F2F2;
+}
+
+#btnConcluir{
+  border: 0px;
+  background-color: #67B5A2;
+  color: #F2F2F2;
+}
+
+#btnRemover{
+  border: 0px;
+  background-color: #7C4C64;
+  color: #F2F2F2;
+}
+
+.marcador{
+  text-decoration: line-through;
+  color: #54718E;
+}
+
+ul{
+  list-style-type: none;
+  padding: 18px 0px;
+  margin: 0px;
+}
+
+.tarefas{
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+}
+
+li{
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+}
+
+.tarefa-nome {
+  flex-grow: 1;
+}
+
+.botoes {
+  display: flex;
+  gap: 10%;
+  border: 0px;
+  outline: none;
+}
+
+button{
+padding: 4%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+img{
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+}

@@ -1,0 +1,33 @@
+<div class="principal">
+
+<h1>TO DO LIST</h1>
+<div class="input">
+<input [(ngModel)]="tarefa" type="text" (keyup.enter)="adicionar()">
+<button id="buttonMais" (click)="adicionar()" (keyup.enter)="adicionar()">
+<img src="/assets/img/Ativo4.svg" alt="">
+</button>
+</div>
+<div class="lista">
+  <ul *ngIf="tarefas.length > 0 || todasTarefasConcluidas()">
+    <li *ngFor="let tarefa of tarefas; let i = index" [ngClass]="{'marcador': tarefa.selecionada}">
+      <div class="tarefas">
+      <span class="tarefa-nome">{{ tarefa.nome }}</span>
+      <span class="botoes">
+        <button id="btnConcluir" (click)="concluir(tarefa)">
+          <img src="/assets/img/Ativo2.svg" alt="concluir">
+        </button>
+        <button id="btnRemover" (click)="remover(i)">
+          <img src="/assets/img/Ativo3.svg" alt="remover">
+        </button>
+      </span>
+    </div>
+    </li>
+  </ul>
+
+<p *ngIf="todasTarefasConcluidas()">
+  Uhuuul! Sem tarefas para fazer!
+</p>
+
+</div>
+</div>
+
